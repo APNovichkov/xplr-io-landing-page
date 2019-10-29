@@ -22,7 +22,7 @@
 .hero-background-img:after {
   content: "";
   position: absolute;
-  background-image: url("sunset.jpg");
+  background-image: url("mountains.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
