@@ -1,22 +1,9 @@
+
 .hero-background-img {
   position: relative;
   background: rgba(0, 0, 0, 0.3); /* If our image is bright, we can tone it down with this darker overlay */
   height: 100%;
   width: 100%;
-}
-
-.jumbotron{
-    height: 100vh;
-}
-
-.jumbotron-header{
-    margin-top: 30vh;
-}
-
-.footer{
-    height: 40px;
-    padding-left: 30px;
-    margin-bottom: 20px;
 }
 
 .hero-background-img:after {
@@ -32,4 +19,97 @@
   bottom: 0;
   z-index: -1;
   opacity: 0.9; /* Tone the image down further by giving it transparency */
+}
+
+.interested-background-img {
+  position: relative;
+  background: rgba(0, 0, 0, 0.3); /* If our image is bright, we can tone it down with this darker overlay */
+  height: 100%;
+  width: 100%;
+}
+
+.interested-background-img:after {
+  content: "";
+  position: absolute;
+  background-image: url("sunset.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.9; /* Tone the image down further by giving it transparency */
+}
+
+.features-background-img {
+  position: relative;
+  background: rgba(0, 0, 0, 0.3); /* If our image is bright, we can tone it down with this darker overlay */
+  height: 100%;
+  width: 100%;
+}
+
+.features-background-img:after {
+  content: "";
+  position: absolute;
+  background-image: url("iceland3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.9; /* Tone the image down further by giving it transparency */
+}
+
+.signed-up-background-img {
+  position: relative;
+  background: rgba(0, 0, 0, 0.3); /* If our image is bright, we can tone it down with this darker overlay */
+  height: 100%;
+  width: 100%;
+}
+
+.signed-up-background-img:after {
+  content: "";
+  position: absolute;
+  background-image: url("dark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.9; /* Tone the image down further by giving it transparency */
+}
+
+.jumbotron{
+    height: 100vh;
+}
+
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #EEEEEE;
+}
+
+
+
+
+
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #ccc;
+    margin: 1em 0; padding: 0; }
+
+.jumbotron-header{
+    margin-top: 30vh;
+}
+
+.footer{
+    height: 40px;
+    padding-left: 30px;
+    margin-bottom: 20px;
 }
