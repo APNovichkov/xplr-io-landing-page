@@ -19,22 +19,20 @@
         <div class="col-md-10 offset-1" style="color: #EEEEEE">
             <div class="card" style="margin-top: 30px; padding: 15px; background-color: transparent; border: None">
                 {% if is_email_valid == 'False' %}
-                    <h1>Looks like you entered the wrong email...</h1>
-                    <h4>Here's a free destination anyways ;)</h4>
+                    <h1>Looks Like You Entered an <i>Invalid</i> Email...</h1>
                 {% else %}
-                    <h1>Thanks For Your Interest!</h1>
-                    <h4>Here's a free destination ;)</h4>
+                    <h1>Thanks For Your <i>Interest!</i></h1>
                 {% endif %}
-
-                <div class="col-md-10 offset-1">
-                    <div class="card" style="margin-top: 10px; padding-top: 50px; background-color: rgba(245, 245, 245, .05)">
-                        <div>
-                            <img src="/static/images/point_reyes.jpg"  style="height: 60%; width: 60%; border-radius: 1%;" alt="Point Reyes">
-                        </div>
-
-                        <h4 style="padding-top: 10px">Point Reyes Lighthouse, California</h4>
-                        <p>37.9979 -123.0121</p>
-                    </div>
+            </div>
+        </div>
+        <div class="col-md-6 offset-0" style="color: #EEEEEE">
+            <div class="card" style="margin-top: 50px; padding-top: 40px; background-color: rgba(245, 245, 245, .05)">
+                <div>
+                    <img src="/static/images/point_reyes.jpg"  style="height:80%; width: 80%; border-radius: 1%;" alt="Point Reyes">
+                </div>
+                <div style="padding-right: 50px; padding-left: 50px; padding-top: 10px; margin-bottom: 20px">
+                    <h4 style="padding-top: 10px; padding-bottom: 8px">Point Reyes Lighthouse, California</h4><hr/>
+                    <p>37.9979 -123.0121</p>
                 </div>
             </div>
         </div>
