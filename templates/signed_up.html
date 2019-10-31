@@ -2,6 +2,43 @@
 
 {% block content %}
 
-<h1>This is signed_up.html!</h1>
+<!-- IMAGE -->
+<div class="jumbotron text-center signed-up-background-img" style="padding-top: 10px; padding-bottom: 0px; margin-bottom: 0px">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand navbar-dark" style='padding-top: 0px; margin-top: 0px'>
+    <a class="navbar-brand" href="/">XPLR.IO</a>
+    <div class="navbar-nav text-right">
+        <a class="nav-item nav-link" href="/">Home</a>
+        <a class="nav-item nav-link" href="/about">About</a>
+        <a class="nav-item nav-link" href="/interested">Sign me up!</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 offset-1" style="color: #EEEEEE">
+            <div class="card" style="margin-top: 30px; padding: 15px; background-color: transparent; border: None">
+                {% if is_email_valid == True %}
+                    <h1>Thanks For Your Interest!</h1>
+                    <h4>Here's a free destination ;)</h4>
+                {% else %}
+                    <h1>Looks like you entered the wrong email...</h1>
+                    <h4>Here's a free destination anyways ;)</h4>
+                {% endif %}
+
+                <div class="col-md-10 offset-1">
+                    <div class="card" style="margin-top: 10px; padding-top: 50px; background-color: rgba(245, 245, 245, .05)">
+                        <div>
+                            <img src="/static/images/point_reyes.jpg"  style="height: 60%; width: 60%; border-radius: 1%;" alt="Point Reyes">
+                        </div>
+
+                        <h4 style="padding-top: 10px">Point Reyes Lighthouse, California</h4>
+                        <p>37.9979 -123.0121</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
