@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- PAGE -->
+<div class="jumbotron text-center hero-background-img" style="padding-top: 10px; padding-bottom: 0px; margin-bottom: 0px">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand navbar-dark" style='padding-top: 0px; margin-top: 0px'>
+        <a class="navbar-brand" href="/">XPLR.IO</a>
+        <div class="navbar-nav text-right">
+            <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/about">About</a>
+            <a class="nav-item nav-link" href="/interested">Sign Me Up!</a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="jumbotron-header" style="color: #FFFFFF">
+        <h1>XPLR.IO</h1>
+        <p class="lead"><b>A Social Media Platform</b> <i>for</i> the <b>Explorers</b>, <i>by</i> the <b>Explorers</b></p>
+    </div>
+    <a href="/about" class="btn btn-light" style="background-color: transparent; color: #FFFFFF">Learn More</a>
+
+    <!-- FOOTER -->
+    <div style="position: absolute; left: 10px; bottom: 0px">
+        <nav class="navbar navbar-expand navbar-dark">
+            <div class="navbar-nav text-right">
+                <a class="nav-item nav-link" href="/">Copyright xplr.io 2019 <span class="sr-only">(current)</span></a>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+{% endblock %}
