@@ -44,7 +44,7 @@ def add_email_function():
 	"""Add new email to emails model."""
 
 	input_email = {
-		'email': request.form.get("email")
+		'email': request.form.get("email").lower()
 	}
 
 	print("This is the email that I got: {}".format(input_email['email']))
