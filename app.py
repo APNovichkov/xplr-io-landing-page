@@ -37,7 +37,7 @@ def signed_up_function(is_email_valid):
 
 	print("Is email valid? : {}".format(is_email_valid))
 
-	return render_template("signed_up.html", is_email_valid=is_email_valid)
+	return render_template("signed_up.html", is_email_valid=str(is_email_valid))
 
 @app.route('/signed-up', methods=['POST'])
 def add_email_function():
